@@ -9,8 +9,8 @@ import { fetchChats } from "./actions/fetchChats"
 
 export default function ChatPage() {
   const isMobile = useMobile()
-  const [showChat, setShowChat] = useState(false)
-  const [selectedChatId, setSelectedChatId] = useState<number | null>(null)
+  const [showChat, setShowChat] = useState(true)
+  const [selectedChatId, setSelectedChatId] = useState<number | null>(12456)
   const [chats, setChats] = useState<ChatResult[]>([])
   const [loading, setLoading] = useState(true)
   const [error, setError] = useState<string | null>(null)

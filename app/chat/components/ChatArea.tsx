@@ -30,7 +30,6 @@ export default function ChatArea({
     }
   }, [chat])
 
-  // Handle sending messages
   const handleSendMessage = (payload: { text?: string; file?: File }) => {
     const newMessage: Comment = {
       id: Date.now(),
